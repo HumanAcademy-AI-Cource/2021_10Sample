@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<launch>
+  <include file="$(find omni_robot)/launch/omni_robot_core.launch" />
+  <node name="sound_move" pkg="sound_mover" type="sound_mover.py" output="screen" />
+  <node name="mic" pkg="sound_mover" type="mic.py" output="screen" />
+  <node name="sound_rqt_plot" pkg="rqt_plot" type="rqt_plot" args="/sound --clear-config" />
+</launch>

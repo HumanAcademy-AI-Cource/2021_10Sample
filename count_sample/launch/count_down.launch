@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+  <node name="count_down" pkg="count_sample" type="count_down.py" output="screen" />
+  <node name="count_print" pkg="count_sample" type="count_print.py" output="screen" />
+</launch>
